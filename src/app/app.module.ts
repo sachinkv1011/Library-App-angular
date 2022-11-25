@@ -20,11 +20,11 @@ const myRoute:Routes=[
     component:IndexPageComponent
   },
   {
-    path:"",
+    path:"registration",
     component:RegistrationComponent
   },
   {
-    path:"",
+    path:"userlogin",
     component:UserLoginComponent
   },
   {

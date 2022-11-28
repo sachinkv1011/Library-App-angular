@@ -1,3 +1,4 @@
+<app-navigation></app-navigation>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -13,23 +14,23 @@
                           <h5 class="card-title" style="text-align: center;">ISSUE BOOKS</h5>
                           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Name</label>
-                            <input type="text" class="form-control">
+                            <input name="name" [(ngModel)]="name" type="text" class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Book Title</label>
-                            <input type="text"  class="form-control">
+                            <input name="title" [(ngModel)]="title" type="text"  class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Date of Issue</label>
-                            <input type="date"  class="form-control">
+                            <input name="dateofissue" [(ngModel)]="dateofissue" type="date"  class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <label for="" class="form-label">Membership No</label>
-                            <input type="text"  class="form-control">
+                            <input name="membershipno" [(ngModel)]="membershipno" type="text"  class="form-control">
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                             <br>
-                            <a href="#" class="btn btn-dark"> Submit</a>
+                            <button (click)="readValues()" class="btn btn-outline-light"> Submit</button> 
                         </div>
                         </div>
                         </div>

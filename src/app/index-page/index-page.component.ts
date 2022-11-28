@@ -16,6 +16,15 @@ export class IndexPageComponent {
       "password":this.password
     }
     console.log(data)
+
+
+    if (data.username=="admin" && data.password=="12345") {
+      alert("valid credentials")
+      
+    } else {
+      alert("invalid login")
+      
+    }
   }
 
 }

@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./index-page.component.css']
 })
 export class IndexPageComponent {
+  username=""
+  password=""
+
+  readValues=()=>
+  {
+    let data:any={
+      "username":this.username,
+      "password":this.password
+    }
+    console.log(data)
+  }
 
 }

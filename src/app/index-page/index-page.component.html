@@ -1,5 +1,5 @@
 <div class="container ">
-    <div class="row bg-dark">
+    <div class="row bg-dark mt-5">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl">
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center text-white">
@@ -8,24 +8,24 @@
                  </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-white">
                     <label for="" class="form-label">Username</label>
-                    <input type="text" class="form-control">
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-white">
                     <label for="" class="form-label">Password</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="text" name="" id="" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                   <a href="viewAllBooks.html"><button class="btn btn-primary ">Login</button></a> 
+                   <button (click)="readValues()" class="btn btn-primary " routerLink="/bookentry">Login</button>
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                   <a href="registration.html">New User Registrtion</a>
+                   <a routerLink="/registration">New User Registrtion</a>
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a href="login.html">User Login</a>
+                    <a routerLink="/userlogin">User Login</a>
  
                  </div>
             </div>

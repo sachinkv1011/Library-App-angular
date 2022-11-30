@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-index-page',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class IndexPageComponent {
   username=""
   password=""
+  
+ constructor(private route:Router){}
 
   readValues=()=>
   {
@@ -19,7 +22,7 @@ export class IndexPageComponent {
 
 
     if (data.username=="admin" && data.password=="12345") {
-      alert("valid credentials")
+      this.route.navigate(['/bookentry'])
       
     } else {
       alert("invalid login")
